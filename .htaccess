@@ -1,0 +1,8 @@
+RewriteEngine On 
+RewriteBase /
+
+RewriteRule ^lien-he$ contact.php 
+RewriteRule ^cat/(.*)-([0-9]+).php$ cat.php?id=$2
+RewriteRule ^detail/(.*)-([0-9]+).php$ detail.php?id=$2
+RewriteRule ^page/([0-9]+)$ index.php?page=$1
+RewriteRule ^cat/(.*)-([0-9]+)-page-([0-9]+) cat.php?id=$2&page=$2
